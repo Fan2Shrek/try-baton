@@ -1,10 +1,11 @@
 {
     "name": "baton/baton",
-    "description": "Baton",
-    "type": "library",
+    "type": "composer-plugin",
+    "version": "1.0.0",
+    "description": "Wow",
     "autoload": {
         "psr-4": {
-            "Baton\\Baton\\": "src/"
+            "Baton\\": "src/"
         }
     },
     "authors": [
@@ -13,5 +14,20 @@
             "email": "pierre27.ambroise@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "composer-plugin-api": "^2.2"
+    },
+    "require-dev": {
+        "composer/composer": "^2.6",
+        "symfony/flex": "^2.4"
+    },
+    "extra": {
+        "class": "Baton\\Baton"
+    },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true,
+            "baton/baton": true
+        }
+    }
 }
