@@ -1,0 +1,17 @@
+{
+    "name": "baton/baton",
+    "description": "Baton",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Baton\\Baton\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fan2Shrek",
+            "email": "pierre27.ambroise@gmail.com"
+        }
+    ],
+    "require": {}
+}
